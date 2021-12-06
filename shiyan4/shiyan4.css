@@ -1,0 +1,52 @@
+a{
+    color: blueviolet;
+    height: 50px;
+    line-height: 50px;
+    padding:10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.nav {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+a:hover{
+    color: darksalmon;
+}
+.nav img{
+    float: left;
+    height: 50px;
+}
+.main{
+    width: auto;
+    min-width: 1000px;
+    height: auto;
+    margin: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.contain{
+    margin: 10px;
+    padding: 15px;
+}
+.contain h1{
+    font-size: 30px;
+    margin: 20px;
+}
+.contain img{
+    margin-left: 30px;
+    width: 400px;
+}
+p{
+    text-indent: 2em;
+    margin: 10px;
+}
+table{
+    width: 500px;
+    height: 300px;
+}

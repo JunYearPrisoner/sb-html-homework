@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骗骗花plus起了</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    axios({
+        method:"PUT",
+        url:"http://localhost:3000/users/2",
+        data:{
+            action:"反转了，骗骗花plus说它是假的假abd"
+        }
+    }).then(function (response) {
+        console.log(response.data);
+    })
+</script>

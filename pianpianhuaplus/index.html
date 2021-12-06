@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骗骗花plus起了</title>
+<!--    <script src="index.js"></script>-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="myDiv"></div>
+</body>
+</html>
+<script>
+    axios({
+        method:"GET",
+        url:"pph.json",
+    }).then(function (response) {
+        console.log(response.data);
+    })
+    // pianpianhuaplus({
+    //     method:"GET",
+    //     url:"pph.json",
+    //     success:function (pph) {
+    //         let user = JSON.parse(pph.responseText);
+    //         console.log(user);
+    //         document.querySelector("#myDiv").innerHTML=user.name+user.word;
+    //     },
+    //     error:function () {
+    //         console.info("骗骗花plus它躺了");
+    //     }
+    // })
+</script>

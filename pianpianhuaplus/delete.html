@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骗骗花plus起不动了</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    axios({
+        method:"DELETE",
+        url:"http://localhost:3000/users/2"
+    }).then(function (response) {
+        console.log(response.data);
+    })
+</script>

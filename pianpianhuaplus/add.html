@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骗骗花plus起了</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="myDiv"></div>
+</body>
+</html>
+<script>
+    axios({
+        method:"POST",
+        url:"http://localhost:3000/users",
+        data:{
+            id:2,
+            name:"骗骗花plus",
+            action:"\n它被abd扭转万象一剑秒了并受到嘲讽：“你弱爆了”。\n附带效果：观众智商-500"
+        }
+    }).then(function (response) {
+        console.log(response.data);
+    })
+</script>
