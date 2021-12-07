@@ -1,0 +1,28 @@
+.left{
+    padding: 20px;
+}
+.center{
+    padding:40px;
+    position: relative;
+}
+.right{
+    padding: 20px;
+}
+div{
+    float: left;
+    border: 0;
+    padding: 0;
+    margin:0;
+}
+.button1{
+    top:120px;
+    position: absolute;
+    left: 0;
+    width: 80px;
+}
+.button2{
+    top:140px;
+    position: absolute;
+    left:0;
+    width: 80px;
+}
