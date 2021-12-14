@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.d-grid {
+    display: grid;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+input{
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+select {
+    outline: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+body {
+    background: azure;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+section.forms {
+    padding: 30px;
+}
+.logo {
+    text-align: center;
+    color: #696687;
+    font-family: 仿宋, serif;
+}
+.forms-grid {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.btn {
+    align-items: center;
+    background: #fff;
+    border-radius:36px;
+    border: 0;
+    color: blueviolet;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 15px 45px;
+    transition: 0.2s;
+    font-weight: 600;
+    margin:20px auto 0;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    background: beige;
+}
+.main {
+    min-height: 100vh;
+    padding: 2em 0;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+.side{
+    border-radius: 8px;
+    box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-width: 400px;
+    padding: 30px 15px;
+    text-align: center;
+    width: 100%;
+    margin: 2em auto;
+}
+.side {
+    background: lavender;
+}
+.side .iconhny {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: lightblue;
+    border-radius: 50%;
+}
+.side .iconhny span.fa {
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+}
+p.already {
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+.side .form{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.side .form .form-row{
+    position: relative;
+    text-align: left;
+}
+.side .form .form-row .fa{
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #fff;
+    opacity: .6;
+}
+.side .form .form-row.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.side .form .form-row.bottom .forgot:hover{
+    opacity: 1;
+}
+.side .form .form-row.button-login{
+    display: inline;
+    text-align:center;
+}
+.side .form .form-row.button-login .fa{
+    position: static;
+}
+.side .form-password,
+.side .form-text{
+    color: #696687;
+    font-size: 16px;
+    border: 0;
+    height: 55px;
+    margin-bottom: 15px;
+    padding: 0 40px 0 0;
+    width: 100%;
+    background: lavender no-repeat;
+    background-image: linear-gradient(to bottom, rgb(204 205 210) 0%, #696687 90%), linear-gradient(to bottom, #696687, #696687);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+
+}

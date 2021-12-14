@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>严茜楚的课设</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H-ui.css" />
+    <link rel="stylesheet" href="css/houtai.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<!--头-->
+<div class="head-div">
+    <div class="head-box" >
+        <ul class="head-list">
+            <li><a href=""><div>我的板块</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 设置</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 模块</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 内容</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 用户</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 扩展</div></a></li>
+            <li><a href=""><div style="border-width:0 0 0 1px;border-style:dotted;"> 应用</div></a></li>
+        </ul>
+    </div>
+</div>
+<!--end头-->
+<!--body-->
+<div class="body-div">
+<!--  左端box  -->
+    <div style="float: left" class="body-left-box">
+        <div class="body-left-head">
+            <div class="tubiao">图标</div>
+            <div class="body-left-text">标题标题标题</div>
+        </div>
+
+<!--    导航栏调用jq框架    -->
+        <div class="sidemenu">
+            <ul>
+                <li><a href="javascript:void(0);" class="one_level_menubar">
+                        <div class="body-left-caidan">
+                            一级菜单
+                        </div>
+                    </a>
+                    <ul class="two_level_menubar">
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="one_level_menubar">
+                        <div class="body-left-caidan">
+                            一级菜单
+                        </div>
+                    </a>
+                    <ul class="two_level_menubar">
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="one_level_menubar">
+                        <div class="body-left-caidan">
+                            一级菜单
+                        </div>
+                    </a>
+                    <ul class="two_level_menubar">
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="one_level_menubar">
+                        <div class="body-left-caidan">
+                            一级菜单
+                        </div>
+                    </a>
+                    <ul class="two_level_menubar">
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="one_level_menubar">
+                        <div class="body-left-caidan">
+                            一级菜单
+                        </div>
+                    </a>
+                    <ul class="two_level_menubar">
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                        <li><a href="javascript:void(0);">二级菜单</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+<!--    end导航栏    -->
+    </div>
+<!--   end左端box -->
+    <!--表格-->
+    <div class="panel panel-default mt-20" style="float: left;height: 460px;margin: 10px;width: 1250px;left: 220px;position: absolute">
+        <div class="panel-header">成员
+            <input class="btn btn-warning-outline radius" type="button" value="查找" style="float: right" id="search">
+            <input class="btn btn-primary-outline radius" type="button" value="添加" style="float: right" id="add">
+        </div>
+        <div class="panel-body">
+            <table class="table table-border table-bordered table-striped mt-20" id="table">
+                <thead>
+                <tr>
+                    <th class="col1">选择</th>
+                    <th class="col1">学号</th>
+                    <th class="col2">姓名</th>
+                    <th class="col3">账号</th>
+                    <th class="col1">密码</th>
+                    <th class="col2">年龄</th>
+                    <th class="col3">选项</th>
+                </tr>
+                </thead>
+                <tbody id="tablebody">
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col2">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th class="col1" style="width: 50px">-->
+<!--                        <div class="check-box">-->
+<!--                            <label> <input type="checkbox" name="checkbox2"></label>-->
+<!--                        </div>-->
+<!--                    </th>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3">表格内容</td>-->
+<!--                    <td class="col3" style="width: 120px">-->
+<!--                        <input class="btn btn-success-outline radius" type="button" value="修改">-->
+<!--                        <input class="btn btn-danger-outline radius" type="button" value="删除">-->
+<!--                    </td>-->
+<!--                </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--end表格-->
+</div>
+<!--endbody-->
+
+</body>
+</html>
+<script src="./js/houtai.js"></script>
